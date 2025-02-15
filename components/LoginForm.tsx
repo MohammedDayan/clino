@@ -26,24 +26,25 @@ export default function LoginForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form onSubmit={handleSubmit} className="w-full space-y-4">
       <div>
-        <Label htmlFor="email">Email</Label>
-        <Input id="email" name="email" type="email" required value={formData.email} onChange={handleChange} />
+
+        <Input height="20px" id="email" name="email" placeholder="Email" type="email" required value={formData.email} onChange={handleChange} />
       </div>
-      <div>
-        <Label htmlFor="password">Password</Label>
+
+      <div className="w-full">      
         <Input
           id="password"
           name="password"
           type="password"
           required
+          placeholder="password"
           value={formData.password}
           onChange={handleChange}
         />
       </div>
-      <Button type="submit" className="w-full">
-        Login
+      <Button type="submit" className="w-full bg-blue-400 text-bold text-white">
+        continue with email
       </Button>
     </form>
   )

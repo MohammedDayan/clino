@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body  className={inter.className}>
-        <div className="container mx-auto ">
+        <div className="2xl:container xl:mx-auto ">
         <main className="min-h-screen ">{children}</main>
         <Footer />
         </div>
