@@ -72,8 +72,8 @@ export default function Home() {
       <div className="text-center bg-cover  h-[80vh] w-full h-full" style={{ backgroundImage: "url('/bg.png')" }}>
         <div className="bg-[#002E5BE5]  h-[80vh] w-full">
           <Header />
-          <div className="ml-[80px]">
-            <h1 className="text-left text-[50px] w-[600px] font-bold mb-6 text-white  ">Explore Open Career Opportunities</h1>
+          <div className="lg:ml-[80px] px-4 ">
+            <h1 className="text-left text-[50px]  font-bold mb-6 text-white  ">Explore Open Career <br /> Opportunities</h1>
             <div className="flex">
               <input className="h-[50px] w-[600px] rounded-md p-2 m-2" type="search" placeholder="Find the job that best suits you" />
             </div>

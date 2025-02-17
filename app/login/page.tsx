@@ -28,7 +28,7 @@ export default function Login() {
 
       {/* Right Column - Login Form */}
 
-      <div className="container px-[190px]  lg:w-1/2 flex flex-col   p-8">
+      <div className="container lg:px-[190px]  lg:w-1/2 flex flex-col   p-8">
         <div className=" ">
             <button className="flex items-center gap-2" type="button" onClick={() => window.location.href = "/"}> 
             <HiArrowLongLeft /> Home 
