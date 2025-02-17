@@ -29,16 +29,21 @@ export default function RegisterForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
-        <Label htmlFor="name">Name</Label>
-        <Input id="name" name="name" type="text" required value={formData.name} onChange={handleChange} />
-      </div>
-      <div>
-        <Label htmlFor="email">Email</Label>
-        <Input id="email" name="email" type="email" required value={formData.email} onChange={handleChange} />
-      </div>
-      <div>
-        <Label htmlFor="password">Password</Label>
+       
         <Input
+        placeholder="Name"
+        id="name" name="name" type="text" required value={formData.name} onChange={handleChange} />
+      </div>
+      <div>
+        
+        <Input
+        placeholder="email"
+        id="email" name="email" type="email" required value={formData.email} onChange={handleChange} />
+      </div>
+      <div>
+        
+        <Input
+        placeholder="Password"
           id="password"
           name="password"
           type="password"
@@ -47,7 +52,7 @@ export default function RegisterForm() {
           onChange={handleChange}
         />
       </div>
-      <Button type="submit" className="w-full">
+      <Button type="submit" className="w-full bg-blue-400">
         Register
       </Button>
     </form>

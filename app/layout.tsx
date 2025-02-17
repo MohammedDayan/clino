@@ -20,7 +20,7 @@ export default function RootLayout({
       <body  className={inter.className}>
         <div className="2xl:container xl:mx-auto ">
         <main className="min-h-screen ">{children}</main>
-        <Footer />
+       
         </div>
                 
       </body>

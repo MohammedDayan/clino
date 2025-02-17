@@ -8,7 +8,7 @@ import Logo from "./Logo"
 
 export default function Header() {
   const pathname = usePathname()
-  const isLoggedIn = true // Replace with actual auth check
+  const isLoggedIn = false// Replace with actual auth check
 
   return (
     <header className=" text-primary-foreground">
@@ -19,35 +19,47 @@ export default function Header() {
         <ul className="flex space-x-4">
           {isLoggedIn ? (
             <>
-              <li>
-                <Link href="/jobs" className={pathname === "/jobs" ? "font-bold" : ""}>
-                  Jobs
-                </Link>
-              </li>
+              
               <li>
                 <Link href="/profile" className={pathname === "/profile" ? "font-bold" : ""}>
                   Profile
                 </Link>
               </li>
+              
               <li>
                 <Button variant="ghost" size="sm" onClick={() => console.log("Logout")}>
                   <LogOut className="mr-2 h-4 w-4" />
                   Logout
                 </Button>
               </li>
+
+              
             </>
           ) : (
             <>
-              <li>
-                <Link href="/login" className={pathname === "/login" ? "font-bold" : ""}>
-                  Login
+            <div className="flex justify-between items-center gap-3">
+            <li>
+                <Link href="/" className={pathname === "/profile" ? "font-bold" : ""}>
+                  Find Jobs
                 </Link>
               </li>
               <li>
-                <Link href="/register" className={pathname === "/register" ? "font-bold" : ""}>
-                  Register
+                <Link href="/" className={pathname === "/login" ? "font-bold" : ""}>
+                News
                 </Link>
               </li>
+              <li>
+
+                <button className="bg-[#6235EA] px-4 py-1 ">
+                Login
+                </button>
+                {/* <Link href="/login" className={pathname === "/register" ? "font-bold" : ""}>
+                 
+                </Link> */}
+              </li>
+            </div>
+            
+            
             </>
           )}
         </ul>
